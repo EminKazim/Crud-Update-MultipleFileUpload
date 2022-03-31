@@ -1,0 +1,282 @@
+﻿@*@model dictionary<string,string>*@
+@model HomeVM
+<header>
+    <div class="notify">
+        <p> Due to the <b>COVID 19</b> epidemic, orders may be processed with a slight delay</p>
+    </div>
+    <div class="container">
+        <div class="header-top">
+            <div class="link-left">
+                <a href="./about..html">About Us</a>
+                <a href="./login.html">My account</a>
+                <a href="">Wishlist</a>
+                <a href="">Order Tracking</a>
+            </div>
+            <div class="about">
+                <div class="secure-text">
+                    <span>
+                        <img src="~/assets/icons/secure-icon.png" alt=""> 100%
+                        Secure delivery without contacting the courier
+                    </span>
+                </div>
+                <div class="help">
+                    <span class="help"> Need help? Call Us: <a href="">+ 0020 500</a></span>
+                </div>
+                <div class="dropdown-buttons">
+                    <div class="dropdown">
+                        <button class="drop-button">
+                            English <img src="https://img.icons8.com/material-outlined/24/000000/expand-arrow--v1.png" />
+                        </button>
+                        <div class="content">
+                            <a href="#">English</a>
+                            <a href="#">Spanish</a>
+                            <a href="#">German</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="drop-button">
+                            USD <img src="https://img.icons8.com/material-outlined/24/000000/expand-arrow--v1.png" />
+                        </button>
+                        <div class="content">
+                            <a href="#">USD</a>
+                            <a href="#">INR</a>
+                            <a href="#">GBP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="header-center">
+                <div class="col-2">
+                    <div class="logo-site-brand">
+                        <a href="">
+                            <img class="logo"
+                                 src="~/assets/img/main-logo.png" alt="">
+                            <p>Online Grocery Shopping Center</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="location">
+                        <button type="button" class="btn-modal btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                            <span>Your Location</span> <i class="fa-solid fa-angle-down"></i><br>
+                            <strong>Select a location</strong>
+                        </button>
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                             data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+
+                                        <p id="staticBackdropLabel" class="modal-title">
+                                            <strong>
+                                                Choose your Delivery
+                                                Location
+                                            </strong>
+                                            <br>
+                                            Enter your address and we will specify the offer for your area.
+                                        </p>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="modals-search">
+                                            <i class="fa-solid fa-magnifying-glass"></i><input class="search ps-1"
+                                                                                               style="width: 95%; margin-bottom: 10px; border: none;"
+                                                                                               placeholder="Search your area" type="search">
+                                        </div>
+                                        <ul>
+                                            <li class="list-group-item">
+                                                Select a Location <span>Clear All</span>
+                                            </li>
+                                            <li class="list-group-item">Alabama <span>Min:130$</span> </li>
+                                            <li class="list-group-item">Alaska <span>Min:120$</span></li>
+                                            <li class="list-group-item">Arizoan <span>Min:150$</span> </li>
+                                            <li class="list-group-item">Colifornia<span>Min:110$</span> </li>
+                                            <li class="list-group-item">Colorado<span>Min:140$</span> </li>
+                                            <li class="list-group-item">Florida<span>Min:160$</span></li>
+                                            <li class="list-group-item">Georgia <span>Min:120$</span> </li>
+                                            <li class="list-group-item">Kansas<span>Min:170$</span> </li>
+                                            <li class="list-group-item">Minneota<span>Min:120$</span> </li>
+                                            <li class="list-group-item">New York<span>Min:110$</span> </li>
+                                            <li class="list-group-item">Washington<span>Min:130$</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="search">
+                        <input type="text" placeholder="  Search for products...">
+                        <div class="logo"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="right">
+                        <div class="user">
+                            <i class="fal fa-user"></i>
+                        </div>
+                        <div class="dropdown">
+                            <a class="d-flex" asp-controller="card" asp-action="index">
+                                <div class="price"><span>$0.00</span></div>
+                                <div class="icon">
+                                    <i class="fal fa-shopping-bag"></i>
+                                    <sub>
+                                        <div class="cart-count"><b>0</b></div>
+                                    </sub>
+                                </div>
+                            </a>
+                            <div class="dropdown">
+                                <div class="dropdown-content ">
+                                    <div class="img">
+                                        <img src="~/assets/img//shopping-bag.png" alt="">
+                                    </div>
+                                    <p>No products in the cart.</p>
+                                    <div class="txt">
+                                        <p>We reduce shipping prices to only 2.49 €!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-5">
+                <div class="all-categories">
+                    <div class="all-categories-button">
+                        <div class="all-categories-btn">
+                            <p><i class="fal fa-bars"></i> ALL CATEGORIES <i class="fa-solid fa-angle-down"></i></p>
+                        </div>
+                        <div class="products-count">
+                            <p>TOTAL 63 PRODUCTS</p>
+                        </div>
+                    </div>
+                    <div class="all-categories-content">
+                        @foreach (var item in Model.Products)
+                        {
+                            <div class="fruits-vegetables">
+                                <div class="fruits-vegetables button">
+                                    <p>
+                                        <i class="@item.CategoryIcon"></i>@item.Name<i class="@item.AroowIcon"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        }
+
+                        <hr>
+                        <div class="button">
+                            <p>Value of the Day</p>
+                        </div>
+                        <div class="button">
+                            <p>Top 1-offers00 Offers</p>
+                        </div>
+                        <div class="button">
+                            <p>New Arrivals</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-1 col-2">
+                <div class="home-dropdown">
+                    <div class="page">
+                        <a href="">HOME <i class="fa-solid fa-chevron-down"></i></a>
+                    </div>
+                    <div class="content">
+                        <a href="./home.html">Home 1</a><br>
+                        <a href="./home.html">Home 2</a><br>
+                        <a href="./home.html">Home 3</a><br>
+                        <a href="./home.html">Home 4</a><br>
+                        <a href="./home.html">Home 5</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-1 col-2">
+                <div class="shop-dropdown">
+                    <div class="page">
+                        <a href="">SHOP <i class="fa-solid fa-chevron-down"></i></a>
+                    </div>
+                    <div class="content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-2">
+                                    <div class="lists">
+                                        <a class="first" href="">Shop Lists</a><br>
+                                        <a href="">Shop Default</a><br>
+                                        <a href="">Shop Right Sidebar</a><br>
+                                        <a href="">Shop Wide</a><br>
+                                        <a href="">List Left Sidebar</a><br>
+                                        <a href="">Load More Button</a><br>
+                                        <a href="">Infinite Scrolling</a>
+                                    </div>
+                                </div>
+                                <div class="col-2 ms-5">
+                                    <div class="lists">
+                                        <a class="first" href="">Product Detail</a><br>
+                                        <a href="">Product Default</a><br>
+                                        <a href="">Product Variable</a><br>
+                                        <a href="">Product Grouped</a><br>
+                                        <a href="">Product External</a><br>
+                                        <a href="">Product Downloadable</a><br>
+                                        <a href="">Product With Video</a>
+                                    </div>
+                                </div>
+                                <div class="col-2 ms-5">
+                                    <div class="lists">
+                                        <a class="first" href="">Product Types</a><br>
+                                        <a href="">Single Type 1</a><br>
+                                        <a href="">Single Type 2</a><br>
+                                        <a href="">Single Type 3</a><br>
+                                        <a href="">Single Type 4</a><br>
+                                        <a href="">Thumbnails Left</a><br>
+                                        <a href="">Zoom Image</a>
+                                    </div>
+                                </div>
+                                <div class="col-2 ms-5">
+                                    <div class="lists">
+                                        <a class="first" href="">Shop Pages</a><br>
+                                        <a href="">Cart</a><br>
+                                        <a href="">Checkout</a><br>
+                                        <a href="">My account</a><br>
+                                        <a href="">Wishlist</a><br>
+                                        <a href="">Order Tracking</a><br>
+                                        <a href="">Order on WhatsApp</a>
+                                    </div>
+                                </div>
+                                <div class="col-2 ms-5">
+                                    <div class="lists">
+                                        <a class="first" href="">Shop Layouts</a><br>
+                                        <a href="">Two Columns</a><br>
+                                        <a href="">Three Columns</a><br>
+                                        <a href="">Three Columns Wide</a><br>
+                                        <a href="">Four Columns</a><br>
+                                        <a href="">Four Columns Wide</a><br>
+                                        <a href="">Five Columns Wide</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-7 col-3">
+                <div class="page">
+                    <a href=""><i class="fal fa-steak"></i> MEATS & SEAFOOD</a>
+                    <a href=""><i class="fal fa-badge"></i> BAKERY</a>
+                    <a href=""><i class="fas fa-mug-hot"></i> BEVERAGES</a>
+                    <a href="./blog.html">BLOG</a>
+                    <a href="./contact.html">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

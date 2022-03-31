@@ -1,0 +1,4416 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#header .notify {
+  background-color: #233a95;
+  text-align: center;
+  color: white;
+  height: 36px;
+  font-size: 26px;
+  padding-top: 7px;
+  font-family: sans-serif;
+}
+
+#header .header-top {
+  border-bottom: 1px solid #e3e4e9;
+}
+
+#header .header-top ul {
+  display: inline;
+}
+
+#header .header-top ul li {
+  list-style: none;
+  display: inline;
+}
+
+#header .header-top ul li a {
+  color: #3e445a;
+  text-decoration: none;
+  padding-right: 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#header .header-top ul li a:hover {
+  color: #2bbef9;
+}
+
+#header .header-top .security {
+  border-right: 1px solid #e3e4e9;
+}
+
+#header .header-top .help {
+  font-size: 11px;
+  border-right: 1px solid #e3e4e9;
+}
+
+#header .header-top .help a {
+  color: #2bbef9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#header .header-top .help a:hover {
+  text-decoration: underline;
+}
+
+#header .header-top .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#header .header-top .dropdown .active {
+  color: #2bbef9;
+}
+
+#header .header-top .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#header .header-top .dropdown h6 {
+  font-size: 15px;
+}
+
+#header .header-top .dropdown h6:hover {
+  color: #2bbef9;
+}
+
+#header .header-top .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: #ffff;
+}
+
+#header .header-top .dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#header .header-top .dropdown .dropdown-content a:hover {
+  color: #2bbef9;
+}
+
+#header .header-center .img a {
+  text-decoration: none;
+  color: #71778e;
+  font-size: 11px;
+}
+
+#header .header-center .img img {
+  width: 100%;
+  height: 100%;
+}
+
+#header .header-center .location .btn-modal {
+  position: relative;
+  background-color: white;
+  color: #233a95;
+  border: 1px solid rgba(151, 151, 151, 0.5);
+  margin-top: 8px;
+  margin-left: 35px;
+  height: 54px;
+  border-radius: 5px;
+  width: 180px;
+}
+
+#header .header-center .location .btn-modal strong {
+  font-size: 13px;
+  color: #223a95;
+  padding-right: 50px;
+}
+
+#header .header-center .location .btn-modal .fa-solid {
+  font-size: 13px;
+  position: absolute;
+  top: 20px;
+  right: 12px;
+}
+
+#header .header-center .location .btn-modal span {
+  font-size: 0.6875rem;
+  margin: 0;
+  color: #979797;
+  padding-right: 82px;
+}
+
+#header .header-center .location .btn-modal:hover {
+  -webkit-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.1), 0 10px 35px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.1), 0 10px 35px 0 rgba(0, 0, 0, 0.1);
+}
+
+#header .header-center .location .btn-modal:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#header .header-center .location .modal-body {
+  height: 400px;
+  overflow-y: scroll;
+}
+
+#header .header-center .location .modal-body span {
+  float: right;
+}
+
+#header .header-center .location .modal-body .modals-search {
+  margin-left: 32px;
+  margin-bottom: 30px;
+  padding-left: 10px;
+  padding-top: 7px;
+  background-color: #f3f4f7;
+  width: 417px;
+  border-radius: 5px;
+}
+
+#header .header-center .location .modal-body .search {
+  background-color: transparent;
+}
+
+#header .header-center .location .modal-body .search::-webkit-input-placeholder {
+  color: #979797;
+}
+
+#header .header-center .location .modal-body .search:-ms-input-placeholder {
+  color: #979797;
+}
+
+#header .header-center .location .modal-body .search::-ms-input-placeholder {
+  color: #979797;
+}
+
+#header .header-center .location .modal-body .search::placeholder {
+  color: #979797;
+}
+
+#header .header-center .location .modal-body .search:focus {
+  border: none;
+}
+
+#header .header-center .location .modal-body .search:focus-visible {
+  outline: none;
+}
+
+#header .header-center .search #search {
+  width: 100%;
+  height: 60px;
+  outline: none;
+  background-color: #f3f4f7;
+  color: #202435;
+  border: none;
+  border-radius: 4px;
+}
+
+#header .header-center .search i {
+  position: relative;
+  top: -40px;
+  left: 90%;
+}
+
+#header .header-center .left a {
+  color: black;
+}
+
+#header .header-center .left a i {
+  margin-top: 10px;
+}
+
+#header .header-center .left .basket {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff1ee;
+  text-align: center;
+  position: relative;
+  left: 40%;
+}
+
+#header .header-center .left .basket i {
+  margin-top: 13px;
+  color: red;
+}
+
+#header .header-center .left .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#header .header-center .left .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#header .header-center .left .dropdown .dropdown-content {
+  height: 280px;
+  display: none;
+  position: absolute;
+  width: 300px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #ffff;
+}
+
+#header .header-center .left .dropdown .dropdown-content .img {
+  margin-top: 20%;
+  display: block;
+}
+
+#header .header-center .left .dropdown .dropdown-content .img img {
+  width: 20%;
+  height: 20%;
+}
+
+#header .header-center .left .dropdown .dropdown-content .txt {
+  height: 100px;
+  width: 80%;
+  border-top: 1px solid #e3e4e9;
+  margin-top: 25%;
+  margin-left: 7%;
+  text-align: center;
+}
+
+#header .header-center .left .dropdown .dropdown-content .txt p {
+  margin-top: 8%;
+  font-size: 13px;
+}
+
+#header .header-bottom .dropdown button {
+  background-color: #2bbef9;
+  color: white;
+  border-radius: 24px;
+  border: none;
+  height: 50px;
+  width: 213.74px;
+  outline: none;
+}
+
+#header .header-bottom .dropdown .dropdown-menu {
+  width: 300px;
+  border-top: 1px solid #e3e4e9;
+}
+
+#header .header-bottom .dropdown .dropdown-menu li {
+  padding-top: 10px;
+  font-size: 16px;
+  color: #3e445a;
+}
+
+#header .header-bottom .dropdown .dropdown-menu li i {
+  padding-right: 10px;
+}
+
+#header .header-bottom .dropdown .dropdown-menu li a:hover {
+  color: #2bbef9;
+}
+
+#header .header-bottom .shop-dropdown {
+  position: relative;
+  height: 60px;
+}
+
+#header .header-bottom .shop-dropdown:hover .content {
+  display: block;
+}
+
+#header .header-bottom .shop-dropdown .page {
+  text-align: center;
+  margin-top: 25px;
+}
+
+#header .header-bottom .shop-dropdown .page a {
+  text-decoration: none;
+  color: #3e445a;
+  font-size: 16px;
+}
+
+#header .header-bottom .shop-dropdown .content {
+  position: absolute;
+  display: none;
+  z-index: 100;
+  width: 1553px;
+  background-color: white;
+  left: -585px;
+  top: 40px;
+  padding-left: 80px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+#header .header-bottom .shop-dropdown .content .first {
+  color: #0931c2;
+  font-weight: 700;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+
+#header .header-bottom .shop-dropdown .content a {
+  text-decoration: none;
+  color: #2b2b2b;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#header .header-bottom .shop-dropdown .content a:hover {
+  color: #2bbef9;
+}
+
+#header .header-bottom .shop-dropdown .content .lists:hover .first {
+  color: #2bbef9;
+}
+
+#header .header-bottom .navigation ul {
+  display: inline;
+}
+
+#header .header-bottom .navigation ul li {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+#header .header-bottom .navigation ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #3e445a;
+  padding-left: 20px;
+  width: 50px;
+  min-height: 50px !important;
+}
+
+#header .header-bottom .navigation ul li a:hover {
+  color: #2bbef9;
+  background-color: #ecf6fa;
+}
+
+#header .header-bottom .navigation .dropdown {
+  position: relative;
+  display: inline-block;
+  color: #3e445a;
+}
+
+#header .header-bottom .navigation .dropdown .head {
+  width: 96.28px;
+  height: 50px;
+}
+
+#header .header-bottom .navigation .dropdown .head h5 {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+#header .header-bottom .navigation .dropdown .head h5 a {
+  text-decoration: none;
+  color: #3e445a;
+}
+
+#header .header-bottom .navigation .dropdown .head h5:hover {
+  color: #2bbef9;
+  background-color: #ecf6fa;
+  height: 100%;
+  border-radius: 40%;
+}
+
+#header .header-bottom .navigation .dropdown .active {
+  color: #2bbef9;
+}
+
+#header .header-bottom .navigation .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#header .header-bottom .navigation .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: #fff;
+}
+
+#header .header-bottom .navigation .dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#header .header-bottom .navigation .dropdown .dropdown-content a:hover {
+  color: #2bbef9;
+}
+
+#header .header-bottom .navigation .dropdown .big {
+  width: 1320px;
+  margin-left: 100%;
+}
+
+#header .header-bottom .navigation .dropdown .big ul li {
+  list-style: none;
+}
+
+#main h4 {
+  font-size: 15px;
+  font-family: Dosis, sans-serif;
+  color: #202435;
+  font-weight: 600px;
+}
+
+#main ul {
+  list-style: none;
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+  color: #71778e;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+#main .list-group {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+#main .list-group ul input {
+  width: 20px;
+  height: 15px;
+}
+
+#main .range-slider__range {
+  -webkit-appearance: none;
+  width: 90%;
+  height: 6px;
+  border-radius: 5px;
+  background: #202435;
+  outline: none;
+  color: #202435;
+  cursor: pointer;
+}
+
+#main .range-slider__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #202435;
+  cursor: pointer;
+}
+
+#main .range-slider__value {
+  display: inline-block;
+  position: relative;
+  width: 60;
+  color: #fff;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 3px;
+  background: #2c3e50;
+  padding: 5px 10px;
+  margin-left: 8px;
+}
+
+#main .range-slider__value:after {
+  position: absolute;
+  top: 8px;
+  left: -7px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #2c3e50;
+  border-bottom: 7px solid transparent;
+}
+
+#main .range-slider__value::before {
+  content: "Price:$0 -- $";
+}
+
+#main .gif {
+  width: 270px;
+  height: 369px;
+}
+
+#main .gif img {
+  width: 100%;
+  height: 100%;
+}
+
+#main .banner-image {
+  background-image: url(../img/bacola-banner-18.jpg);
+  height: 250px;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#main .banner-image .text {
+  text-align: center;
+  margin-top: 7%;
+}
+
+#main .banner-image .text ul li {
+  text-align: left;
+  margin-left: 27%;
+  color: black;
+  font-size: 18px;
+}
+
+#main .tab-layout {
+  background-color: #f2f7fa;
+  margin-top: 15px;
+  height: 50px;
+  width: 900px;
+  z-index: 1;
+}
+
+#main .tab-layout ul li {
+  display: inline;
+  padding-right: 25px;
+}
+
+#main .tab-layout ul li img {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+#main .tab-layout ul li img:hover {
+  opacity: 1;
+}
+
+#main .tab-layout .sort-categories {
+  width: 250px;
+  height: 170px;
+  background-color: white;
+  border: 1px solid white;
+  -webkit-box-shadow: 5px 10px 8px #888888;
+          box-shadow: 5px 10px 8px #888888;
+}
+
+#main .tab-layout .sort-categories ul li {
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600px;
+  color: black;
+  cursor: pointer;
+}
+
+#main .tab-layout .sort-categories ul li:hover {
+  color: #2bbef9;
+}
+
+#main .tab-layout h5 {
+  font-size: 16px;
+}
+
+#main .tab-layout .count-categories {
+  width: 70px;
+  height: 170px;
+  background-color: white;
+  border: 1px solid white;
+  -webkit-box-shadow: 5px 10px 8px #888888;
+          box-shadow: 5px 10px 8px #888888;
+}
+
+#main .tab-layout .count-categories ul li {
+  display: block;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600px;
+  color: black;
+  cursor: pointer;
+}
+
+#main .tab-layout .count-categories ul li:hover {
+  color: #2bbef9;
+}
+
+#main .card-products {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  width: 13.8rem;
+  height: 28rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #e3e4e9;
+}
+
+#main .card-products:hover {
+  -webkit-box-shadow: 10px 5px 5px #b9b9b9;
+          box-shadow: 10px 5px 5px #b9b9b9;
+  border: 0.5px solid #233a95;
+  border-radius: 6px;
+}
+
+#main .card-products .hidden-icon {
+  margin-top: 5px;
+}
+
+#main .card-products .hidden-icon a {
+  text-decoration: none;
+  color: black;
+}
+
+#main .card-products .hidden-icon i {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  visibility: hidden;
+  margin-left: 160px;
+  line-height: 35px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border-radius: 1px solid #e3e4e9;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 5px;
+}
+
+#main .card-products .hidden-icon i:hover {
+  background-color: #13135b;
+  color: white;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+#main .card-products:hover .btn {
+  visibility: visible !important;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+#main .card-products:hover i {
+  visibility: visible !important;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+#main .card-products .card-image {
+  width: 70%;
+  height: 7 0%;
+  margin-top: 20px;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+#main .card-products .discount {
+  position: absolute;
+  border: 1px solid #2bbef9;
+  background-color: #2bbef9;
+  border-radius: 4px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -130px;
+  margin-left: 15px;
+  font-size: 13px;
+  padding: 3px;
+  width: 35px;
+}
+
+#main .card-products .discount p {
+  text-align: center;
+}
+
+#main .card-products .body {
+  margin-left: 10px;
+}
+
+#main .card-products .body .btn {
+  margin-left: 10px;
+}
+
+#main .card-products .body .second-price {
+  color: #ea2b0f;
+  font-size: 20px;
+}
+
+#main .card-products .body .a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-family: Inter, sans-serif;
+}
+
+#main .card-products .body .a:hover {
+  color: #233a95;
+}
+
+#main .card-products .body .price {
+  color: #6c757d;
+  text-decoration: line-through;
+}
+
+#main .card-products .body .yellows {
+  color: gold;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+#main .card-products .body .gray {
+  color: gray;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+#main .card-products .body .stock {
+  color: #28a745;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+#main .card-products .body .btn {
+  visibility: hidden;
+  background-color: #233a95;
+  border-radius: 30px;
+  width: 90%;
+}
+
+#main .card-products .body .title {
+  font-size: 13px;
+  font-weight: 650;
+}
+
+@-webkit-keyframes cdp-in {
+  from {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes cdp-in {
+  from {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#main .cdp {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0;
+  z-index: 6;
+  margin: 50px 0;
+  -webkit-animation: cdp-in 500ms ease both;
+          animation: cdp-in 500ms ease both;
+}
+
+#main .cdp_i {
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transition: background 250ms;
+  transition: background 250ms;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0 3px 6px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 38px;
+  border: 2px solid #fff;
+  line-height: 38px;
+  padding: 0;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: .03em;
+  display: none;
+}
+
+#main .cdp_i:first-child, #main .cdp_i:last-child {
+  padding: 0 16px;
+  margin: 0 12px 6px;
+}
+
+#main .cdp_i:last-child, #main .cdp_i:nth-child(2), #main .cdp_i:nth-last-child(2) {
+  display: inline-block;
+}
+
+#main .cdp a {
+  color: black;
+}
+
+#main .cdp_i:hover {
+  background-color: #e3e6e7;
+}
+
+#main .cdp:not([actpage="1"]) #main .cdp_i:nth-child(1) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="1"] .cdp_i:nth-child(-1):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="1"] .cdp_i:nth-child(0):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="1"] .cdp_i:nth-child(1):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="1"] .cdp_i:nth-child(2) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="1"] .cdp_i:nth-child(2) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="1"] .cdp_i:nth-child(3):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="1"] .cdp_i:nth-child(4):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="1"] .cdp_i:nth-child(5):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="2"] .cdp_i:nth-child(0):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="2"] .cdp_i:nth-child(1):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="2"] .cdp_i:nth-child(2):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="2"] .cdp_i:nth-child(3) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="2"] .cdp_i:nth-child(3) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="2"] .cdp_i:nth-child(4):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="2"] .cdp_i:nth-child(5):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="2"] .cdp_i:nth-child(6):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="3"] .cdp_i:nth-child(1):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="3"] .cdp_i:nth-child(2):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="3"] .cdp_i:nth-child(3):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="3"] .cdp_i:nth-child(4) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="3"] .cdp_i:nth-child(4) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="3"] .cdp_i:nth-child(5):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="3"] .cdp_i:nth-child(6):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="3"] .cdp_i:nth-child(7):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="4"] .cdp_i:nth-child(2):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="4"] .cdp_i:nth-child(3):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="4"] .cdp_i:nth-child(4):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="4"] .cdp_i:nth-child(5) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="4"] .cdp_i:nth-child(5) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="4"] .cdp_i:nth-child(6):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="4"] .cdp_i:nth-child(7):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="4"] .cdp_i:nth-child(8):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="5"] .cdp_i:nth-child(3):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="5"] .cdp_i:nth-child(4):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="5"] .cdp_i:nth-child(5):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="5"] .cdp_i:nth-child(6) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="5"] .cdp_i:nth-child(6) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="5"] .cdp_i:nth-child(7):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="5"] .cdp_i:nth-child(8):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="5"] .cdp_i:nth-child(9):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="6"] .cdp_i:nth-child(4):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="6"] .cdp_i:nth-child(5):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="6"] .cdp_i:nth-child(6):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="6"] .cdp_i:nth-child(7) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="6"] .cdp_i:nth-child(7) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="6"] .cdp_i:nth-child(8):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="6"] .cdp_i:nth-child(9):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="6"] .cdp_i:nth-child(10):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="7"] .cdp_i:nth-child(5):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="7"] .cdp_i:nth-child(6):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="7"] .cdp_i:nth-child(7):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="7"] .cdp_i:nth-child(8) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="7"] .cdp_i:nth-child(8) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="7"] .cdp_i:nth-child(9):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="7"] .cdp_i:nth-child(10):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="7"] .cdp_i:nth-child(11):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="8"] .cdp_i:nth-child(6):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="8"] .cdp_i:nth-child(7):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="8"] .cdp_i:nth-child(8):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="8"] .cdp_i:nth-child(9) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="8"] .cdp_i:nth-child(9) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="8"] .cdp_i:nth-child(10):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="8"] .cdp_i:nth-child(11):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="8"] .cdp_i:nth-child(12):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="9"] .cdp_i:nth-child(7):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="9"] .cdp_i:nth-child(8):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="9"] .cdp_i:nth-child(9):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="9"] .cdp_i:nth-child(10) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="9"] .cdp_i:nth-child(10) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="9"] .cdp_i:nth-child(11):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="9"] .cdp_i:nth-child(12):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="9"] .cdp_i:nth-child(13):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="10"] .cdp_i:nth-child(8):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="10"] .cdp_i:nth-child(9):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="10"] .cdp_i:nth-child(10):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="10"] .cdp_i:nth-child(11) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="10"] .cdp_i:nth-child(11) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="10"] .cdp_i:nth-child(12):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="10"] .cdp_i:nth-child(13):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="10"] .cdp_i:nth-child(14):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="11"] .cdp_i:nth-child(9):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="11"] .cdp_i:nth-child(10):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="11"] .cdp_i:nth-child(11):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="11"] .cdp_i:nth-child(12) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="11"] .cdp_i:nth-child(12) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="11"] .cdp_i:nth-child(13):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="11"] .cdp_i:nth-child(14):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="11"] .cdp_i:nth-child(15):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="12"] .cdp_i:nth-child(10):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="12"] .cdp_i:nth-child(11):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="12"] .cdp_i:nth-child(12):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="12"] .cdp_i:nth-child(13) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="12"] .cdp_i:nth-child(13) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="12"] .cdp_i:nth-child(14):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="12"] .cdp_i:nth-child(15):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="12"] .cdp_i:nth-child(16):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="13"] .cdp_i:nth-child(11):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="13"] .cdp_i:nth-child(12):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="13"] .cdp_i:nth-child(13):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="13"] .cdp_i:nth-child(14) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="13"] .cdp_i:nth-child(14) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="13"] .cdp_i:nth-child(15):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="13"] .cdp_i:nth-child(16):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="13"] .cdp_i:nth-child(17):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="14"] .cdp_i:nth-child(12):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="14"] .cdp_i:nth-child(13):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="14"] .cdp_i:nth-child(14):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="14"] .cdp_i:nth-child(15) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="14"] .cdp_i:nth-child(15) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="14"] .cdp_i:nth-child(16):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="14"] .cdp_i:nth-child(17):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="14"] .cdp_i:nth-child(18):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="15"] .cdp_i:nth-child(13):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="15"] .cdp_i:nth-child(14):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="15"] .cdp_i:nth-child(15):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="15"] .cdp_i:nth-child(16) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="15"] .cdp_i:nth-child(16) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="15"] .cdp_i:nth-child(17):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="15"] .cdp_i:nth-child(18):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="15"] .cdp_i:nth-child(19):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="16"] .cdp_i:nth-child(14):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="16"] .cdp_i:nth-child(15):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="16"] .cdp_i:nth-child(16):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="16"] .cdp_i:nth-child(17) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="16"] .cdp_i:nth-child(17) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="16"] .cdp_i:nth-child(18):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="16"] .cdp_i:nth-child(19):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="16"] .cdp_i:nth-child(20):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="17"] .cdp_i:nth-child(15):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="17"] .cdp_i:nth-child(16):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="17"] .cdp_i:nth-child(17):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="17"] .cdp_i:nth-child(18) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="17"] .cdp_i:nth-child(18) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="17"] .cdp_i:nth-child(19):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="17"] .cdp_i:nth-child(20):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="17"] .cdp_i:nth-child(21):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="18"] .cdp_i:nth-child(16):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="18"] .cdp_i:nth-child(17):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="18"] .cdp_i:nth-child(18):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="18"] .cdp_i:nth-child(19) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="18"] .cdp_i:nth-child(19) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="18"] .cdp_i:nth-child(20):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="18"] .cdp_i:nth-child(21):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="18"] .cdp_i:nth-child(22):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="19"] .cdp_i:nth-child(17):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="19"] .cdp_i:nth-child(18):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="19"] .cdp_i:nth-child(19):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="19"] .cdp_i:nth-child(20) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="19"] .cdp_i:nth-child(20) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="19"] .cdp_i:nth-child(21):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="19"] .cdp_i:nth-child(22):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="19"] .cdp_i:nth-child(23):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="20"] .cdp_i:nth-child(18):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="20"] .cdp_i:nth-child(19):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="20"] .cdp_i:nth-child(20):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="20"] .cdp_i:nth-child(21) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="20"] .cdp_i:nth-child(21) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="20"] .cdp_i:nth-child(22):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="20"] .cdp_i:nth-child(23):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="20"] .cdp_i:nth-child(24):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="21"] .cdp_i:nth-child(19):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="21"] .cdp_i:nth-child(20):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="21"] .cdp_i:nth-child(21):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="21"] .cdp_i:nth-child(22) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="21"] .cdp_i:nth-child(22) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="21"] .cdp_i:nth-child(23):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="21"] .cdp_i:nth-child(24):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="21"] .cdp_i:nth-child(25):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="22"] .cdp_i:nth-child(20):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="22"] .cdp_i:nth-child(21):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="22"] .cdp_i:nth-child(22):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="22"] .cdp_i:nth-child(23) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="22"] .cdp_i:nth-child(23) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="22"] .cdp_i:nth-child(24):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="22"] .cdp_i:nth-child(25):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="22"] .cdp_i:nth-child(26):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="23"] .cdp_i:nth-child(21):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="23"] .cdp_i:nth-child(22):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="23"] .cdp_i:nth-child(23):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="23"] .cdp_i:nth-child(24) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="23"] .cdp_i:nth-child(24) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="23"] .cdp_i:nth-child(25):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="23"] .cdp_i:nth-child(26):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="23"] .cdp_i:nth-child(27):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="24"] .cdp_i:nth-child(22):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="24"] .cdp_i:nth-child(23):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="24"] .cdp_i:nth-child(24):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="24"] .cdp_i:nth-child(25) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="24"] .cdp_i:nth-child(25) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="24"] .cdp_i:nth-child(26):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="24"] .cdp_i:nth-child(27):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="24"] .cdp_i:nth-child(28):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="25"] .cdp_i:nth-child(23):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="25"] .cdp_i:nth-child(24):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="25"] .cdp_i:nth-child(25):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="25"] .cdp_i:nth-child(26) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="25"] .cdp_i:nth-child(26) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="25"] .cdp_i:nth-child(27):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="25"] .cdp_i:nth-child(28):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="25"] .cdp_i:nth-child(29):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="26"] .cdp_i:nth-child(24):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="26"] .cdp_i:nth-child(25):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="26"] .cdp_i:nth-child(26):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="26"] .cdp_i:nth-child(27) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="26"] .cdp_i:nth-child(27) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="26"] .cdp_i:nth-child(28):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="26"] .cdp_i:nth-child(29):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="26"] .cdp_i:nth-child(30):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="27"] .cdp_i:nth-child(25):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="27"] .cdp_i:nth-child(26):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="27"] .cdp_i:nth-child(27):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="27"] .cdp_i:nth-child(28) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="27"] .cdp_i:nth-child(28) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="27"] .cdp_i:nth-child(29):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="27"] .cdp_i:nth-child(30):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="27"] .cdp_i:nth-child(31):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="28"] .cdp_i:nth-child(26):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="28"] .cdp_i:nth-child(27):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="28"] .cdp_i:nth-child(28):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="28"] .cdp_i:nth-child(29) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="28"] .cdp_i:nth-child(29) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="28"] .cdp_i:nth-child(30):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="28"] .cdp_i:nth-child(31):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="28"] .cdp_i:nth-child(32):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="29"] .cdp_i:nth-child(27):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="29"] .cdp_i:nth-child(28):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="29"] .cdp_i:nth-child(29):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="29"] .cdp_i:nth-child(30) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="29"] .cdp_i:nth-child(30) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="29"] .cdp_i:nth-child(31):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="29"] .cdp_i:nth-child(32):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="29"] .cdp_i:nth-child(33):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="30"] .cdp_i:nth-child(28):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="30"] .cdp_i:nth-child(29):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="30"] .cdp_i:nth-child(30):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="30"] .cdp_i:nth-child(31) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="30"] .cdp_i:nth-child(31) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="30"] .cdp_i:nth-child(32):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="30"] .cdp_i:nth-child(33):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="30"] .cdp_i:nth-child(34):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="31"] .cdp_i:nth-child(29):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="31"] .cdp_i:nth-child(30):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="31"] .cdp_i:nth-child(31):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="31"] .cdp_i:nth-child(32) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="31"] .cdp_i:nth-child(32) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="31"] .cdp_i:nth-child(33):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="31"] .cdp_i:nth-child(34):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="31"] .cdp_i:nth-child(35):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="32"] .cdp_i:nth-child(30):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="32"] .cdp_i:nth-child(31):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="32"] .cdp_i:nth-child(32):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="32"] .cdp_i:nth-child(33) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="32"] .cdp_i:nth-child(33) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="32"] .cdp_i:nth-child(34):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="32"] .cdp_i:nth-child(35):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="32"] .cdp_i:nth-child(36):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="33"] .cdp_i:nth-child(31):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="33"] .cdp_i:nth-child(32):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="33"] .cdp_i:nth-child(33):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="33"] .cdp_i:nth-child(34) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="33"] .cdp_i:nth-child(34) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="33"] .cdp_i:nth-child(35):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="33"] .cdp_i:nth-child(36):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="33"] .cdp_i:nth-child(37):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="34"] .cdp_i:nth-child(32):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="34"] .cdp_i:nth-child(33):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="34"] .cdp_i:nth-child(34):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="34"] .cdp_i:nth-child(35) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="34"] .cdp_i:nth-child(35) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="34"] .cdp_i:nth-child(36):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="34"] .cdp_i:nth-child(37):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="34"] .cdp_i:nth-child(38):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="35"] .cdp_i:nth-child(33):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="35"] .cdp_i:nth-child(34):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="35"] .cdp_i:nth-child(35):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="35"] .cdp_i:nth-child(36) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="35"] .cdp_i:nth-child(36) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="35"] .cdp_i:nth-child(37):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="35"] .cdp_i:nth-child(38):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="35"] .cdp_i:nth-child(39):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="36"] .cdp_i:nth-child(34):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="36"] .cdp_i:nth-child(35):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="36"] .cdp_i:nth-child(36):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="36"] .cdp_i:nth-child(37) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="36"] .cdp_i:nth-child(37) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="36"] .cdp_i:nth-child(38):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="36"] .cdp_i:nth-child(39):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="36"] .cdp_i:nth-child(40):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="37"] .cdp_i:nth-child(35):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="37"] .cdp_i:nth-child(36):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="37"] .cdp_i:nth-child(37):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="37"] .cdp_i:nth-child(38) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="37"] .cdp_i:nth-child(38) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="37"] .cdp_i:nth-child(39):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="37"] .cdp_i:nth-child(40):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="37"] .cdp_i:nth-child(41):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="38"] .cdp_i:nth-child(36):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="38"] .cdp_i:nth-child(37):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="38"] .cdp_i:nth-child(38):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="38"] .cdp_i:nth-child(39) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="38"] .cdp_i:nth-child(39) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="38"] .cdp_i:nth-child(40):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="38"] .cdp_i:nth-child(41):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="38"] .cdp_i:nth-child(42):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="39"] .cdp_i:nth-child(37):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="39"] .cdp_i:nth-child(38):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="39"] .cdp_i:nth-child(39):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="39"] .cdp_i:nth-child(40) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="39"] .cdp_i:nth-child(40) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="39"] .cdp_i:nth-child(41):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="39"] .cdp_i:nth-child(42):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="39"] .cdp_i:nth-child(43):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="40"] .cdp_i:nth-child(38):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="40"] .cdp_i:nth-child(39):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="40"] .cdp_i:nth-child(40):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="40"] .cdp_i:nth-child(41) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="40"] .cdp_i:nth-child(41) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="40"] .cdp_i:nth-child(42):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="40"] .cdp_i:nth-child(43):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="40"] .cdp_i:nth-child(44):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="41"] .cdp_i:nth-child(39):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="41"] .cdp_i:nth-child(40):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="41"] .cdp_i:nth-child(41):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="41"] .cdp_i:nth-child(42) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="41"] .cdp_i:nth-child(42) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="41"] .cdp_i:nth-child(43):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="41"] .cdp_i:nth-child(44):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="41"] .cdp_i:nth-child(45):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="42"] .cdp_i:nth-child(40):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="42"] .cdp_i:nth-child(41):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="42"] .cdp_i:nth-child(42):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="42"] .cdp_i:nth-child(43) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="42"] .cdp_i:nth-child(43) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="42"] .cdp_i:nth-child(44):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="42"] .cdp_i:nth-child(45):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="42"] .cdp_i:nth-child(46):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="43"] .cdp_i:nth-child(41):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="43"] .cdp_i:nth-child(42):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="43"] .cdp_i:nth-child(43):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="43"] .cdp_i:nth-child(44) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="43"] .cdp_i:nth-child(44) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="43"] .cdp_i:nth-child(45):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="43"] .cdp_i:nth-child(46):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="43"] .cdp_i:nth-child(47):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="44"] .cdp_i:nth-child(42):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="44"] .cdp_i:nth-child(43):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="44"] .cdp_i:nth-child(44):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="44"] .cdp_i:nth-child(45) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="44"] .cdp_i:nth-child(45) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="44"] .cdp_i:nth-child(46):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="44"] .cdp_i:nth-child(47):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="44"] .cdp_i:nth-child(48):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="45"] .cdp_i:nth-child(43):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="45"] .cdp_i:nth-child(44):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="45"] .cdp_i:nth-child(45):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="45"] .cdp_i:nth-child(46) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="45"] .cdp_i:nth-child(46) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="45"] .cdp_i:nth-child(47):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="45"] .cdp_i:nth-child(48):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="45"] .cdp_i:nth-child(49):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="46"] .cdp_i:nth-child(44):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="46"] .cdp_i:nth-child(45):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="46"] .cdp_i:nth-child(46):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="46"] .cdp_i:nth-child(47) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="46"] .cdp_i:nth-child(47) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="46"] .cdp_i:nth-child(48):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="46"] .cdp_i:nth-child(49):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="46"] .cdp_i:nth-child(50):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="47"] .cdp_i:nth-child(45):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="47"] .cdp_i:nth-child(46):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="47"] .cdp_i:nth-child(47):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="47"] .cdp_i:nth-child(48) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="47"] .cdp_i:nth-child(48) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="47"] .cdp_i:nth-child(49):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="47"] .cdp_i:nth-child(50):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="47"] .cdp_i:nth-child(51):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="48"] .cdp_i:nth-child(46):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="48"] .cdp_i:nth-child(47):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="48"] .cdp_i:nth-child(48):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="48"] .cdp_i:nth-child(49) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="48"] .cdp_i:nth-child(49) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="48"] .cdp_i:nth-child(50):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="48"] .cdp_i:nth-child(51):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="48"] .cdp_i:nth-child(52):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="49"] .cdp_i:nth-child(47):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="49"] .cdp_i:nth-child(48):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="49"] .cdp_i:nth-child(49):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="49"] .cdp_i:nth-child(50) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="49"] .cdp_i:nth-child(50) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="49"] .cdp_i:nth-child(51):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="49"] .cdp_i:nth-child(52):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="49"] .cdp_i:nth-child(53):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="50"] .cdp_i:nth-child(48):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="50"] .cdp_i:nth-child(49):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="50"] .cdp_i:nth-child(50):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="50"] .cdp_i:nth-child(51) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="50"] .cdp_i:nth-child(51) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="50"] .cdp_i:nth-child(52):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="50"] .cdp_i:nth-child(53):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="50"] .cdp_i:nth-child(54):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="51"] .cdp_i:nth-child(49):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="51"] .cdp_i:nth-child(50):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="51"] .cdp_i:nth-child(51):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="51"] .cdp_i:nth-child(52) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="51"] .cdp_i:nth-child(52) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="51"] .cdp_i:nth-child(53):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="51"] .cdp_i:nth-child(54):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="51"] .cdp_i:nth-child(55):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="52"] .cdp_i:nth-child(50):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="52"] .cdp_i:nth-child(51):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="52"] .cdp_i:nth-child(52):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="52"] .cdp_i:nth-child(53) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="52"] .cdp_i:nth-child(53) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="52"] .cdp_i:nth-child(54):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="52"] .cdp_i:nth-child(55):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="52"] .cdp_i:nth-child(56):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="53"] .cdp_i:nth-child(51):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="53"] .cdp_i:nth-child(52):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="53"] .cdp_i:nth-child(53):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="53"] .cdp_i:nth-child(54) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="53"] .cdp_i:nth-child(54) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="53"] .cdp_i:nth-child(55):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="53"] .cdp_i:nth-child(56):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="53"] .cdp_i:nth-child(57):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="54"] .cdp_i:nth-child(52):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="54"] .cdp_i:nth-child(53):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="54"] .cdp_i:nth-child(54):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="54"] .cdp_i:nth-child(55) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="54"] .cdp_i:nth-child(55) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="54"] .cdp_i:nth-child(56):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="54"] .cdp_i:nth-child(57):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="54"] .cdp_i:nth-child(58):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="55"] .cdp_i:nth-child(53):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="55"] .cdp_i:nth-child(54):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="55"] .cdp_i:nth-child(55):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="55"] .cdp_i:nth-child(56) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="55"] .cdp_i:nth-child(56) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="55"] .cdp_i:nth-child(57):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="55"] .cdp_i:nth-child(58):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="55"] .cdp_i:nth-child(59):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="56"] .cdp_i:nth-child(54):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="56"] .cdp_i:nth-child(55):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="56"] .cdp_i:nth-child(56):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="56"] .cdp_i:nth-child(57) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="56"] .cdp_i:nth-child(57) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="56"] .cdp_i:nth-child(58):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="56"] .cdp_i:nth-child(59):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="56"] .cdp_i:nth-child(60):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="57"] .cdp_i:nth-child(55):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="57"] .cdp_i:nth-child(56):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="57"] .cdp_i:nth-child(57):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="57"] .cdp_i:nth-child(58) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="57"] .cdp_i:nth-child(58) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="57"] .cdp_i:nth-child(59):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="57"] .cdp_i:nth-child(60):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="57"] .cdp_i:nth-child(61):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="58"] .cdp_i:nth-child(56):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="58"] .cdp_i:nth-child(57):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="58"] .cdp_i:nth-child(58):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="58"] .cdp_i:nth-child(59) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="58"] .cdp_i:nth-child(59) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="58"] .cdp_i:nth-child(60):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="58"] .cdp_i:nth-child(61):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="58"] .cdp_i:nth-child(62):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="59"] .cdp_i:nth-child(57):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="59"] .cdp_i:nth-child(58):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="59"] .cdp_i:nth-child(59):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="59"] .cdp_i:nth-child(60) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="59"] .cdp_i:nth-child(60) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="59"] .cdp_i:nth-child(61):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="59"] .cdp_i:nth-child(62):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="59"] .cdp_i:nth-child(63):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="60"] .cdp_i:nth-child(58):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="60"] .cdp_i:nth-child(59):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="60"] .cdp_i:nth-child(60):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="60"] .cdp_i:nth-child(61) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="60"] .cdp_i:nth-child(61) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="60"] .cdp_i:nth-child(62):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="60"] .cdp_i:nth-child(63):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="60"] .cdp_i:nth-child(64):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="61"] .cdp_i:nth-child(59):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="61"] .cdp_i:nth-child(60):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="61"] .cdp_i:nth-child(61):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="61"] .cdp_i:nth-child(62) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="61"] .cdp_i:nth-child(62) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="61"] .cdp_i:nth-child(63):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="61"] .cdp_i:nth-child(64):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="61"] .cdp_i:nth-child(65):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="62"] .cdp_i:nth-child(60):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="62"] .cdp_i:nth-child(61):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="62"] .cdp_i:nth-child(62):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="62"] .cdp_i:nth-child(63) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="62"] .cdp_i:nth-child(63) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="62"] .cdp_i:nth-child(64):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="62"] .cdp_i:nth-child(65):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="62"] .cdp_i:nth-child(66):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="63"] .cdp_i:nth-child(61):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="63"] .cdp_i:nth-child(62):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="63"] .cdp_i:nth-child(63):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="63"] .cdp_i:nth-child(64) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="63"] .cdp_i:nth-child(64) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="63"] .cdp_i:nth-child(65):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="63"] .cdp_i:nth-child(66):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="63"] .cdp_i:nth-child(67):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="64"] .cdp_i:nth-child(62):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="64"] .cdp_i:nth-child(63):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="64"] .cdp_i:nth-child(64):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="64"] .cdp_i:nth-child(65) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="64"] .cdp_i:nth-child(65) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="64"] .cdp_i:nth-child(66):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="64"] .cdp_i:nth-child(67):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="64"] .cdp_i:nth-child(68):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="65"] .cdp_i:nth-child(63):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="65"] .cdp_i:nth-child(64):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="65"] .cdp_i:nth-child(65):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="65"] .cdp_i:nth-child(66) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="65"] .cdp_i:nth-child(66) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="65"] .cdp_i:nth-child(67):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="65"] .cdp_i:nth-child(68):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="65"] .cdp_i:nth-child(69):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="66"] .cdp_i:nth-child(64):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="66"] .cdp_i:nth-child(65):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="66"] .cdp_i:nth-child(66):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="66"] .cdp_i:nth-child(67) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="66"] .cdp_i:nth-child(67) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="66"] .cdp_i:nth-child(68):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="66"] .cdp_i:nth-child(69):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="66"] .cdp_i:nth-child(70):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="67"] .cdp_i:nth-child(65):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="67"] .cdp_i:nth-child(66):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="67"] .cdp_i:nth-child(67):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="67"] .cdp_i:nth-child(68) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="67"] .cdp_i:nth-child(68) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="67"] .cdp_i:nth-child(69):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="67"] .cdp_i:nth-child(70):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="67"] .cdp_i:nth-child(71):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="68"] .cdp_i:nth-child(66):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="68"] .cdp_i:nth-child(67):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="68"] .cdp_i:nth-child(68):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="68"] .cdp_i:nth-child(69) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="68"] .cdp_i:nth-child(69) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="68"] .cdp_i:nth-child(70):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="68"] .cdp_i:nth-child(71):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="68"] .cdp_i:nth-child(72):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="69"] .cdp_i:nth-child(67):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="69"] .cdp_i:nth-child(68):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="69"] .cdp_i:nth-child(69):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="69"] .cdp_i:nth-child(70) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="69"] .cdp_i:nth-child(70) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="69"] .cdp_i:nth-child(71):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="69"] .cdp_i:nth-child(72):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="69"] .cdp_i:nth-child(73):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="70"] .cdp_i:nth-child(68):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="70"] .cdp_i:nth-child(69):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="70"] .cdp_i:nth-child(70):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="70"] .cdp_i:nth-child(71) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="70"] .cdp_i:nth-child(71) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="70"] .cdp_i:nth-child(72):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="70"] .cdp_i:nth-child(73):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="70"] .cdp_i:nth-child(74):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="71"] .cdp_i:nth-child(69):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="71"] .cdp_i:nth-child(70):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="71"] .cdp_i:nth-child(71):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="71"] .cdp_i:nth-child(72) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="71"] .cdp_i:nth-child(72) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="71"] .cdp_i:nth-child(73):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="71"] .cdp_i:nth-child(74):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="71"] .cdp_i:nth-child(75):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="72"] .cdp_i:nth-child(70):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="72"] .cdp_i:nth-child(71):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="72"] .cdp_i:nth-child(72):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="72"] .cdp_i:nth-child(73) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="72"] .cdp_i:nth-child(73) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="72"] .cdp_i:nth-child(74):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="72"] .cdp_i:nth-child(75):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="72"] .cdp_i:nth-child(76):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="73"] .cdp_i:nth-child(71):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="73"] .cdp_i:nth-child(72):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="73"] .cdp_i:nth-child(73):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="73"] .cdp_i:nth-child(74) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="73"] .cdp_i:nth-child(74) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="73"] .cdp_i:nth-child(75):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="73"] .cdp_i:nth-child(76):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="73"] .cdp_i:nth-child(77):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="74"] .cdp_i:nth-child(72):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="74"] .cdp_i:nth-child(73):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="74"] .cdp_i:nth-child(74):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="74"] .cdp_i:nth-child(75) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="74"] .cdp_i:nth-child(75) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="74"] .cdp_i:nth-child(76):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="74"] .cdp_i:nth-child(77):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="74"] .cdp_i:nth-child(78):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="75"] .cdp_i:nth-child(73):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="75"] .cdp_i:nth-child(74):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="75"] .cdp_i:nth-child(75):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="75"] .cdp_i:nth-child(76) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="75"] .cdp_i:nth-child(76) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="75"] .cdp_i:nth-child(77):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="75"] .cdp_i:nth-child(78):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="75"] .cdp_i:nth-child(79):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="76"] .cdp_i:nth-child(74):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="76"] .cdp_i:nth-child(75):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="76"] .cdp_i:nth-child(76):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="76"] .cdp_i:nth-child(77) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="76"] .cdp_i:nth-child(77) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="76"] .cdp_i:nth-child(78):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="76"] .cdp_i:nth-child(79):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="76"] .cdp_i:nth-child(80):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="77"] .cdp_i:nth-child(75):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="77"] .cdp_i:nth-child(76):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="77"] .cdp_i:nth-child(77):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="77"] .cdp_i:nth-child(78) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="77"] .cdp_i:nth-child(78) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="77"] .cdp_i:nth-child(79):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="77"] .cdp_i:nth-child(80):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="77"] .cdp_i:nth-child(81):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="78"] .cdp_i:nth-child(76):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="78"] .cdp_i:nth-child(77):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="78"] .cdp_i:nth-child(78):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="78"] .cdp_i:nth-child(79) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="78"] .cdp_i:nth-child(79) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="78"] .cdp_i:nth-child(80):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="78"] .cdp_i:nth-child(81):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="78"] .cdp_i:nth-child(82):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="79"] .cdp_i:nth-child(77):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="79"] .cdp_i:nth-child(78):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="79"] .cdp_i:nth-child(79):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="79"] .cdp_i:nth-child(80) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="79"] .cdp_i:nth-child(80) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="79"] .cdp_i:nth-child(81):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="79"] .cdp_i:nth-child(82):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="79"] .cdp_i:nth-child(83):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="80"] .cdp_i:nth-child(78):not(:first-child):not(:nth-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+#main .cdp[actpage="80"] .cdp_i:nth-child(79):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="80"] .cdp_i:nth-child(80):not(:first-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="80"] .cdp_i:nth-child(81) {
+  background-color: #2bbef9;
+  color: #fff;
+  display: inline-block;
+}
+
+#main .cdp[actpage="80"] .cdp_i:nth-child(81) + .cdp_i:last-child {
+  display: none !important;
+}
+
+#main .cdp[actpage="80"] .cdp_i:nth-child(82):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="80"] .cdp_i:nth-child(83):not(:last-child) {
+  display: inline-block;
+}
+
+#main .cdp[actpage="80"] .cdp_i:nth-child(84):not(:last-child):not(:nth-last-child(2)) {
+  display: inline-block;
+  pointer-events: none;
+  color: transparent;
+  border-color: transparent;
+  width: 50px;
+}
+
+.coupon {
+  width: 100%;
+  height: 360px;
+  background-color: #233a95;
+  position: relative;
+}
+
+.coupon img {
+  position: absolute;
+  bottom: 0%;
+}
+
+.coupon .content {
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+  position: absolute;
+  top: 15%;
+  left: 10%;
+}
+
+.coupon .content p {
+  font-family: "Inter", sans-serif;
+  padding-top: 5px;
+  color: gray;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.coupon .content .form {
+  color: white;
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  position: relative;
+}
+
+.coupon .content .form i {
+  position: absolute;
+  top: 28%;
+  left: -7.5%;
+  color: gray;
+  font-size: 25px;
+}
+
+.coupon .content .form .input {
+  width: 470px;
+  height: 70px;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  margin-left: -50px;
+  outline: none;
+}
+
+.coupon .content .form .btn {
+  right: 1%;
+  top: 10%;
+  position: absolute;
+  height: 55px;
+  width: 95px;
+  background-color: #233a95;
+  border: none;
+}
+
+.info {
+  height: 30px;
+  padding-left: 3%;
+  text-align: center;
+  font-family: Inter, sans-serif;
+}
+
+.info .bor {
+  border-right: 1px solid #e3e4e9;
+  padding-right: 5px;
+}
+
+.info .img-one {
+  margin-left: 10px;
+}
+
+.info i::after {
+  padding-left: 10px;
+}
+
+#footer {
+  background: #f7f8fd;
+  height: 260px;
+  padding-left: 5%;
+}
+
+#footer .dairy {
+  padding-right: 15px;
+}
+
+#footer h4 a {
+  color: #202435;
+  font-size: 0.9375rem;
+  font-weight: bolder;
+}
+
+#footer ul {
+  list-style: none;
+}
+
+#footer ul a {
+  text-decoration: none;
+  color: #71778e;
+}
+
+#footer ul li {
+  margin-top: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#footer .social {
+  margin-top: 150px;
+}
+
+#footer .social .phone {
+  width: 50px;
+  height: 50px;
+  border-top: 2px solid #e3e4e9;
+  border-radius: 50%;
+  text-align: center;
+}
+
+#footer .social .phone img {
+  margin-top: 7px;
+  position: relative;
+}
+
+#footer .social .phone span {
+  font-size: xx-large;
+}
+
+#footer .social .download {
+  height: 100px;
+}
+
+#footer .social .download span {
+  font-size: 13px;
+  color: #71778e;
+}
+
+#footer .social .download img {
+  position: relative;
+  bottom: 23%;
+  left: 3%;
+  cursor: pointer;
+}
+
+#footer .social .links ul {
+  list-style: none;
+}
+
+#footer .social .links ul li {
+  display: inline;
+  margin-left: 15px;
+}
+
+#footer .social .links ul li a {
+  text-decoration: none;
+  color: #233a95;
+}
+
+#footer span {
+  font-size: 13px;
+  color: #71778e;
+}
+
+#footer .policy ul li {
+  display: inline;
+  margin-left: 25px;
+}
+
+#footer .policy ul li:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=shop.css.map */

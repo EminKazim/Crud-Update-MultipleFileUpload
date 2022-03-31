@@ -1,0 +1,203 @@
+﻿@using Basket_ViewComponent
+@inject Basket_ViewComponent.Services.LayoutService _layoutService;
+@{ 
+    Dictionary<string, string> settings = _layoutService.GetSettings();
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="assets/css/flipclock.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/assets/css/flipclock.css">
+    <link rel="stylesheet" href="~/assets/css/home.css">
+    <link rel="stylesheet" href="~/assets/css/cart.css">
+</head>
+<body>
+    @await Component.InvokeAsync("Header")
+
+    @RenderBody()
+
+    @await Component.InvokeAsync("Footer")
+     <br>
+    <section id="footer">
+        <div class="footer">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-xl-2 col-sm-2">
+                        <div class="fruits ">
+                            <ul>
+                                <h4><a href="">FRUIT & VEGETABLES</a></h4>
+                                <li><a href="">Fresh Vegetables</a></li>
+                                <li><a href="">Herbs & Seasonings</a></li>
+                                <li><a href="">Fresh Fruits</a></li>
+                                <li><a href="">Cuts & Sprouts</a></li>
+                                <li><a href="">Exotic Fruits & Veggies</a></li>
+                                <li><a href="">Packaged Produce</a></li>
+                                <li><a href="">Party Trays</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-sm-2">
+                        <div class="dairy">
+                            <ul>
+                                <h4><a href="#">BREAKFAST & DAIRY</a></h4>
+                                <li><a href="#">Milk & Flavoured Milk</a></li>
+                                <li><a href="#">Butter and Margarine</a></li>
+                                <li><a href="#">Cheese</a></li>
+                                <li><a href="#">Eggs Subsituties</a></li>
+                                <li><a href="#">Honey</a></li>
+                                <li><a href="#">Marmalades</a></li>
+                                <li><a href="#">Sour Cream and Dips</a></li>
+                                <li><a href="#">Yogurt</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-sm-2">
+                        <div class="dairy">
+                            <ul>
+                                <h4><a href="#">MEAT & SEAFOOD</a></h4>
+                                <li><a href="#">Breakfast Sausage</a></li>
+                                <li><a href="#">Dinner Sausage</a></li>
+                                <li><a href="#">Beef</a></li>
+                                <li><a href="#">Chicken</a></li>
+                                <li><a href="#">Sliced Deli Meat</a></li>
+                                <li><a href="#">Shrimp</a></li>
+                                <li><a href="#">Wild Caught Fillets</a></li>
+                                <li><a href="#">Farm Raised Fillets</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-sm-2">
+                        <div class="dairy">
+                            <ul>
+                                <h4><a href="#">BEVERAGES</a></h4>
+                                <li><a href="#">Water</a></li>
+                                <li><a href="#">Sparkling Water</a></li>
+                                <li><a href="#">Soda</a></li>
+                                <li><a href="#">Coffee</a></li>
+                                <li><a href="#">Milk & Plant-Based Milk</a></li>
+                                <li><a href="#">Tea & Kombucha</a></li>
+                                <li><a href="#">Drink Boxes & Pouches</a></li>
+                                <li><a href="#">Craft Beer</a></li>
+                                <li><a href="#">Wine</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-sm-2">
+                        <div class="dairy">
+                            <ul>
+                                <h4><a href="#">BREADS & BAKERY</a></h4>
+                                <li><a href="#">Milk & Flavoured</a></li>
+                                <li><a href="#">Butter and Margarine</a></li>
+                                <li><a href="#">Cheese</a></li>
+                                <li><a href="#">Eggs Subsituties</a></li>
+                                <li><a href="#">Honey</a></li>
+                                <li><a href="#">Marmalades</a></li>
+                                <li><a href="#">Sour Cream and Dips</a></li>
+                                <li><a href="#">Yogurt</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="row">
+                        <div class="col-xl-5 col-sm-12">
+                            <img src="~/assets/icons/call.png" alt=""> <span style="font-size:1.5rem; color:#202435">
+                                @settings["Phone"]
+                            </span>
+                            <p class="mr-5">Working 8:00-22:00</p>
+                        </div>
+                        <div class="col-xl-5 col-sm-12">
+                            <div class="download">
+                                <h6>Download App on Mobile :</h6>
+                                <span>15% discount on your first purchase</span>
+                                <a href="https://play.google.com/store/movies">
+                                    <img src="~/assets/img/google-play.png"
+                                         alt="">
+                                </a>
+                                <a href="https://www.apple.com/app-store/">
+                                    <img src="~/assets/img/app-store.png"
+                                         alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-12">
+                            <div class="links">
+                                <ul>
+                                    <li class="face">
+                                        <a href="https://www.facebook.com/">
+                                            <i class="fab fa-facebook-f fa-lg"></i>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://twitter.com/"><i class="fab fa-twitter fa-lg"></i></a></li>
+                                    <li>
+                                        <a href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-xl-5 col-sm-12">
+                        <span>
+                            Copyright 2022 © Bacola WordPress Theme. All rights reserved. Powered by
+                            KlbTheme.
+                        </span>
+                    </div>
+                    <div class="col-xl-7 col-sm-12">
+                        <div class="policy">
+                            <ul>
+                                <li><a href="https://klbtheme.com/bacola/privacy-policy/">Privacy Policy</a></li>
+                                <li>
+                                    <a href="https://klbtheme.com/bacola/terms-and-conditions/">
+                                        Terms and
+                                        Conditions
+                                    </a>
+                                </li>
+                                <li><a href="https://klbtheme.com/bacola/my-account/#">Cookie</a></li>
+                                <li><a href="./login.html"><img src="~/assets/img/payments.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/edff80f9e7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+            integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+            crossorigin="anonymous"></script>
+    <script src="~/assets/js/owl.carousel.min.js"></script>
+    <script src="~/assets/js/flipclock.min.js"></script>
+    <script src="~/assets/js/home.js"></script>
+</body>
+</html>

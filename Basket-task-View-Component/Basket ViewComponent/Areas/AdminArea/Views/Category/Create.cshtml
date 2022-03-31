@@ -1,0 +1,17 @@
+﻿@model Product
+@{
+    ViewData["Title"] = "Create";
+}
+<div class="container-fluid mt-5 " style="width:400px; margin-left:20%;">
+    <form method="post" asp-action="Create">
+        <label class="mt-2" asp-for="Name">Category name</label>
+        <input class="form-control form-control-sm mt-3" type="text" asp-for="Name" placeholder="Category name" maxlength="60">
+        <span asp-validation-for="Name" class="text-danger"></span>
+        <label class="mt-2">Category icon</label>
+        <input class="form-control form-control-sm mt-1" type="text" placeholder="Category icon">
+        <label class="mt-2">Arrow icon</label>
+        <input class="form-control form-control-sm mt-1" type="text" placeholder="Arrow icon">
+        <button type="submit" class="btn btn-primary me-2 mt-2">Submit</button>
+        <button asp-action="Index" class="btn btn-light mt-2">Cancel</button>
+    </form>
+</div>
